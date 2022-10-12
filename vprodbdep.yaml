@@ -32,6 +32,7 @@ spec:
                   name: app-secret
                   key: db-pass
       nodeSelector:
+        # This is to make sure that depolyment should be created in same zone where EBS is created .
         zone: us-east-1a
       volumes:
         - name: vpro-db-data
